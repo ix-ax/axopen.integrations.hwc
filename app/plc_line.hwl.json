@@ -1,0 +1,1213 @@
+{
+  "Devices": [
+    {
+      "Name": "plc_line",
+      "Modules": [
+        {
+          "Name": "plc_line",
+          "TypeIdentifier": {
+            "OrderNumber": "6ES7 516-3AP03-0AB0",
+            "Version": "V3.0"
+          },
+          "AccessProtection": {
+            "AccessLevel": "FullAccess"
+          },
+          "Services": [
+            {
+              "Type": "WebServer",
+              "Enabled": true,
+              "Parameters": {
+                "HttpsOnly": true
+              }
+            }
+          ],
+          "UserManagement": {
+            "Roles": [
+              {
+                "Name": "WebServerAccessRole",
+                "FunctionRights": [
+                  "ReadPlcVariables",
+                  "WritePlcVariables",
+                  "ReadFiles",
+                  "QueryDiagnostics",
+                  "FlashLed"
+                ]
+              }
+            ],
+            "Users": [
+              {
+                "Name": "usr",
+                "AssignedRoles": [
+                  "WebServerAccessRole"
+                ]
+              }
+            ]
+          },
+          "Ports": [
+            {
+              "Name": "Port1",
+              "Label": "X1 P1"
+            },
+            {
+              "Name": "Port2",
+              "Label": "X1 P2"
+            }
+          ],
+          "Interfaces": [
+            {
+              "Name": "profinet",
+              "Label": "X1",
+              "Addresses": {
+                "Configured": [
+                  { "IPv4": "10.10.10.120" },
+                  { "ProfinetDeviceName": "plc_line.profinet" }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "cmmtas",
+      "Modules":[
+        {
+          "Name": "cmmtas",
+          "TypeIdentifier": {
+            "FileName": "GSDML-V2.41-Festo-CMMT-AS-modified-20240402.xml",
+            "GsdId":  "IDD_DAP MP 1" 
+          },
+          "Interfaces": [
+            {
+              "Name": "profinet",
+              "Label": "X1",
+              "Addresses": {
+                "Configured": [
+                  { "IPv4": "10.10.10.51" },
+                  { "ProfinetDeviceName": "cmmtas" }
+                ]
+              }
+            }
+          ] 
+        },
+        {
+          "Name": "DoServo",
+          "TypeIdentifier": {
+            "FileName": "GSDML-V2.41-Festo-CMMT-AS-modified-20240402.xml",
+            "GsdId": "IDM_SERVO"
+          },
+          "Submodules": [
+            {
+              "Name": "ModuleAcessPoint",
+              "TypeIdentifier": {
+                "FileName": "GSDML-V2.41-Festo-CMMT-AS-modified-20240402.xml",
+                "GsdId": "IDS_MAP"
+              }
+            },
+            {
+              "Name": "SiemensTelegram111-PZD-12-12",
+              "TypeIdentifier": {
+                "FileName": "GSDML-V2.41-Festo-CMMT-AS-modified-20240402.xml",
+                "GsdId": "IDS_TELEGRAM_111"
+              }
+              ,"Position": 2
+            },
+            {
+              "Name": "SiemensTelegram750-PZD-4-1",
+              "TypeIdentifier": {
+                "FileName": "GSDML-V2.41-Festo-CMMT-AS-modified-20240402.xml",
+                "GsdId": "IDS_TELEGRAM_750"
+              }
+              ,"Position": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Name": "rf186c",
+      "Modules":[
+        {
+          "Name": "rf186c",
+          "TypeIdentifier": {
+            "GsdId": "DAP 12",
+            "FileName": "GSDML-V2.41-SIEMENS-RF18XC-20210415.XML"
+          },
+          "Interfaces": [
+            {
+              "Name": "profinet",
+              "Label": "X1",
+              "Addresses": {
+                "Configured": [
+                  { "IPv4": "10.10.10.99" },
+                  { "ProfinetDeviceName": "rf186c" }
+                ]
+              }
+            }
+          ] 
+        },
+        {
+          "Name": "CM_1",
+          "TypeIdentifier": {
+            "GsdId": "ID_1WCFG",
+            "FileName": "GSDML-V2.41-SIEMENS-RF18XC-20210415.XML"
+          }
+        },
+        {
+          "Name": "Reader_1",
+          "TypeIdentifier": {
+            "GsdId": "ID_1WUNI",
+            "FileName": "GSDML-V2.41-SIEMENS-RF18XC-20210415.XML"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "et200sp",
+      "Modules":[
+        {
+          "Name": "et200sp",
+          "TypeIdentifier": {
+            "GsdId": "DIM ST V4.2",
+            "FileName": "GSDML-V2.42-SIEMENS-ET200SP-20230812.XML"
+          },
+          "Interfaces": [
+            {
+              "Name": "profinet",
+              "Label": "X1",
+              "Addresses": {
+                "Configured": [
+                  { "IPv4": "10.10.10.98" },
+                  { "ProfinetDeviceName": "et200sp" }
+                ]
+              }
+            }
+          ] 
+        },
+        {
+          "Name": "CM_4xIO-Link_V2_2_144I_128O_1",
+          "TypeIdentifier": {
+            "GsdId": "CM 4xIO-Link V2.2 144I/128O",
+            "FileName": "GSDML-V2.42-Siemens-ET200SP-20230812.xml"
+          },
+          "Parameters": {
+            "RecordDataList": [
+              {
+                "Index": 128,
+                "RawValue": "0x04 34 01 00 0E 04 01 01 21 20 03 00 2A 00 0C 02 09 00 02 1C 21 20 03 00 00 00 00 00 00 00 03 1C 21 20 03 00 00 00 00 00 00 00 04 1C 21 20 03 00 00 00 00 00 00 00"
+              },
+              {
+                "Index": 243,
+                "RawValue": "0x01 00 00 00" 
+              }
+            ]
+          }
+        },
+        {
+          "Name": "Server_module_V1_1",
+          "TypeIdentifier": {
+            "GsdId": "Servermodule_without_io",
+            "FileName": "GSDML-V2.42-Siemens-ET200SP-20230812.xml"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "et200sp_1",
+      "Modules":[
+        {
+          "Name": "et200sp_1",
+          "TypeIdentifier": {
+            "GsdId": "DIM ST V3.3",
+            "FileName": "GSDML-V2.42-SIEMENS-ET200SP-20230812.XML"
+          },
+          "Interfaces": [
+            {
+              "Name": "profinet",
+              "Label": "X1",
+              "Addresses": {
+                "Configured": [
+                  { "IPv4": "10.10.10.30" },
+                  { "ProfinetDeviceName": "et200sp_1" }
+                ]
+              }
+            }
+          ] 
+        },
+        {
+          "Name": "DQ_ST_1",
+          "TypeIdentifier": {
+            "GsdId": "DQ 8x24VDC/0,5A ST V1.1",
+            "FileName": "GSDML-V2.42-Siemens-ET200SP-20230812.xml"
+          },
+          "Parameters": {
+            "RecordDataList": [
+              {
+                "Index": 128,
+                "RawValue": "0x00 02 0D 01 00 01 00 01 00 01 00 01 00 01 00 01 00 01" 
+              },
+              {
+                "Index": 243,
+                "RawValue": "0x01 00 00 00" 
+              }
+            ]
+          }
+        },
+        {
+          "Name": "DI_ST_1",
+          "TypeIdentifier": {
+            "GsdId": "DI 8x24VDC ST V1.1",
+            "FileName": "GSDML-V2.42-Siemens-ET200SP-20230812.xml"
+          },
+          "Parameters": {
+            "RecordDataList": [
+              {
+                "Index": 128,
+                "RawValue": "0x00 02 05 86 00 86 00 86 00 86 00 86 00 86 00 86 00 86" 
+              },
+              {
+                "Index": 243,
+                "RawValue": "0x00 00 00 00" 
+              }
+            ]
+          }
+        },
+        {
+          "Name": "DI_ST_2",
+          "TypeIdentifier": {
+            "GsdId": "DI 8x24VDC ST V1.1",
+            "FileName": "GSDML-V2.42-Siemens-ET200SP-20230812.xml"
+          },
+          "Parameters": {
+            "RecordDataList": [
+              {
+                "Index": 128,
+                "RawValue": "0x00 02 05 90 00 90 00 90 00 90 00 90 00 90 00 90 00 90" 
+              },
+              {
+                "Index": 243,
+                "RawValue": "0x00 00 00 00" 
+              }
+            ]
+          }
+        },
+        {
+          "Name": "Server_module_V1_1",
+          "TypeIdentifier": {
+            "GsdId": "Servermodule_without_io",
+            "FileName": "GSDML-V2.42-Siemens-ET200SP-20230812.xml"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "festocpx",
+      "Modules":[
+        {
+          "Name": "festocpx",
+          "TypeIdentifier": {
+            "GsdId": "DAPv2 CU R50",
+            "FileName": "GSDML-V2.34-FESTO-CPX-20230831.XML"
+          },
+          "Interfaces": [
+            {
+              "Name": "profinet",
+              "Label": "X1",
+              "Addresses": {
+                "Configured": [
+                  { "IPv4": "10.10.10.55" },
+                  { "ProfinetDeviceName": "festocpx" }
+                ]
+              }
+            }
+          ] 
+        },
+        {
+          "Name": "FB43_PNIO_Module_1",
+          "TypeIdentifier": {
+            "GsdId": "CPX_215_032",
+            "FileName": "GSDML-V2.34-FESTO-CPX-20230831.XML"
+          }
+        },
+        {
+          "Name": "MPA1S-VMPA1-FB-EMS-8",
+          "TypeIdentifier": {
+            "GsdId": "CPX_082_000",
+            "FileName": "GSDML-V2.34-FESTO-CPX-20230831.XML"
+          }
+        },
+        {
+          "Name": "MPA1S-VMPA1-FB-EMG-8_1",
+          "TypeIdentifier": {
+            "GsdId": "CPX_080_000",
+            "FileName": "GSDML-V2.34-FESTO-CPX-20230831.XML"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "aventics",
+      "Modules":[
+        {
+          "Name": "aventics",
+          "TypeIdentifier": {
+            "GsdId": "DIM 31",
+            "FileName": "gsdml-v2.34-aventics-02b5-aes2-20200409.xml"
+          },
+          "Interfaces": [
+            {
+              "Name": "profinet",
+              "Label": "X1",
+              "Addresses": {
+                "Configured": [
+                  { "IPv4": "10.10.10.31" },
+                  { "ProfinetDeviceName": "aventics" }
+                ]
+              }
+            }
+          ] 
+        },
+        {
+          "Name": "Valve-driver-4-valves_1",
+          "TypeIdentifier": {
+            "GsdId": "IDM_23",
+            "FileName": "gsdml-v2.34-aventics-02b5-aes2-20200409.xml"
+          }
+        },
+        {
+          "Name": "Valve-driver-3-valves_1",
+          "TypeIdentifier": {
+            "GsdId": "IDM_22",
+            "FileName": "gsdml-v2.34-aventics-02b5-aes2-20200409.xml"
+          }
+        },
+        {
+          "Name": "Valve-driver-4-valves_2",
+          "TypeIdentifier": {
+            "GsdId": "IDM_23",
+            "FileName": "gsdml-v2.34-aventics-02b5-aes2-20200409.xml"
+          }
+        },
+        {
+          "Name": "Valve-driver-4-valves_3",
+          "TypeIdentifier": {
+            "GsdId": "IDM_23",
+            "FileName": "gsdml-v2.34-aventics-02b5-aes2-20200409.xml"
+          }
+        },
+        {
+          "Name": "Valve-driver-2-valves_1",
+          "TypeIdentifier": {
+            "GsdId": "IDM_21",
+            "FileName": "gsdml-v2.34-aventics-02b5-aes2-20200409.xml"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "BNIPNT507005Z040",
+      "Modules":[
+        {
+          "Name": "BNIPNT507005Z040",
+          "TypeIdentifier": {
+            "GsdId": "DAP 1",
+            "FileName": "GSDML-V2.33-BALLUFF-BNI-PNT-507-005-Z040-20180901.XML"
+          },
+          "Interfaces": [
+            {
+              "Name": "profinet",
+              "Label": "X1",
+              "Addresses": {
+                "Configured": [
+                  { "IPv4": "10.10.10.3" },
+                  { "ProfinetDeviceName": "BNIPNT507005Z040" }
+                ]
+              }
+            }
+          ] 
+        }
+        // Commented out. Failed to create this module.
+        // ,                                                      
+        // {
+        //   "Name": "BIS_M-4XX-045_1",
+        //   "TypeIdentifier": {
+        //     "GsdId": "ID_Mod_BIS_M_4XX_045",
+        //     "FileName": "GSDML-V2.33-BALLUFF-BNI-PNT-507-005-Z040-20180901.XML"
+        //   }
+        // }
+      ]
+    },
+    {
+      "Name": "reader-st1",
+      "Modules":[
+        {
+          "Name": "reader-st1",
+          "TypeIdentifier": {
+            "GsdId": "DAP46",
+            "FileName": "GSDML-V2.42-COGNEX-DATAMANCLASSB-20220124.XML"
+          },
+          "Interfaces": [
+            {
+              "Name": "profinet",
+              "Label": "X1",
+              "Addresses": {
+                "Configured": [
+                  { "IPv4": "10.10.10.13" },
+                  { "ProfinetDeviceName": "reader-st1" }
+                ]
+              }
+            }
+          ] 
+        },
+        {
+          "Name": "Acquisition_Control",
+          "TypeIdentifier": {
+            "GsdId": "101",
+            "FileName": "GSDML-V2.42-COGNEX-DATAMANCLASSB-20220124.XML"
+          }
+        },
+        {
+          "Name": "Acquisition_Status",
+          "TypeIdentifier": {
+            "GsdId": "201",
+            "FileName": "GSDML-V2.42-COGNEX-DATAMANCLASSB-20220124.XML"
+          }
+        },
+        {
+          "Name": "Results_Control",
+          "TypeIdentifier": {
+            "GsdId": "102",
+            "FileName": "GSDML-V2.42-COGNEX-DATAMANCLASSB-20220124.XML"
+          }
+        },
+        {
+          "Name": "Results_Status",
+          "TypeIdentifier": {
+            "GsdId": "202",
+            "FileName": "GSDML-V2.42-COGNEX-DATAMANCLASSB-20220124.XML"
+          }
+        },
+        {
+          "Name": "Soft_Event_Control",
+          "TypeIdentifier": {
+            "GsdId": "105",
+            "FileName": "GSDML-V2.42-COGNEX-DATAMANCLASSB-20220124.XML"
+          }
+        },
+        // Commented out. Failed to create these modules.
+        // {
+        //   "Name": "User_Data-128_bytes",
+        //   "TypeIdentifier": {
+        //     "GsdId": "304",
+        //     "FileName": "GSDML-V2.42-COGNEX-DATAMANCLASSB-20220124.XML"
+        //   }
+        // },
+        // {
+        //   "Name": "Result_Data-128_bytes",
+        //   "TypeIdentifier": {
+        //     "GsdId": "404",
+        //     "FileName": "GSDML-V2.42-COGNEX-DATAMANCLASSB-20220124.XML"
+        //   }
+        // }
+      ]
+    },
+    {
+      "Name": "reader-st2",
+      "Modules":[
+        {
+          "Name": "reader-st2",
+          "TypeIdentifier": {
+            "GsdId": "DAP8",
+            "FileName": "GSDML-V2.31-COGNEX-DATAMAN-20170215.XML"
+          },
+          "Interfaces": [
+            {
+              "Name": "profinet",
+              "Label": "X1",
+              "Addresses": {
+                "Configured": [
+                  { "IPv4": "10.10.10.50" },
+                  { "ProfinetDeviceName": "reader-st2" }
+                ]
+              }
+            }
+          ] 
+        },
+        {
+          "Name": "Acquisition_Control",
+          "TypeIdentifier": {
+            "GsdId": "101",
+            "FileName": "GSDML-V2.31-COGNEX-DATAMAN-20170215.XML"
+          }
+        },
+        {
+          "Name": "Acquisition_Status",
+          "TypeIdentifier": {
+            "GsdId": "201",
+            "FileName": "GSDML-V2.31-COGNEX-DATAMAN-20170215.XML"
+          }
+        },
+        {
+          "Name": "Results_Control",
+          "TypeIdentifier": {
+            "GsdId": "102",
+            "FileName": "GSDML-V2.31-COGNEX-DATAMAN-20170215.XML"
+          }
+        },
+        {
+          "Name": "Results_Status",
+          "TypeIdentifier": {
+            "GsdId": "202",
+            "FileName": "GSDML-V2.31-COGNEX-DATAMAN-20170215.XML"
+          }
+        },
+        {
+          "Name": "Soft_Event_Control",
+          "TypeIdentifier": {
+            "GsdId": "105",
+            "FileName": "GSDML-V2.31-COGNEX-DATAMAN-20170215.XML"
+          }
+        },
+        {
+          "Name": "User_Data-64_bytes",
+          "TypeIdentifier": {
+            "GsdId": "303",
+            "FileName": "GSDML-V2.31-COGNEX-DATAMAN-20170215.XML"
+          }
+        },
+        {
+          "Name": "Result_Data-64_bytes",
+          "TypeIdentifier": {
+            "GsdId": "403",
+            "FileName": "GSDML-V2.31-COGNEX-DATAMAN-20170215.XML"
+          }
+        }
+      ]
+    },
+    // Commented out. Failed to create any of these modules of this device.
+    // {
+    //   "Name": "7600",
+    //   "Modules":[
+    //     {
+    //       "Name": "7600",
+    //       "TypeIdentifier": {
+    //         "GsdId": "DAP20",
+    //         "FileName": "GSDML-V2.34-COGNEX-INSIGHTCLASSB-20200529.XML"
+    //       },
+    //       "Interfaces": [
+    //         {
+    //           "Name": "profinet",
+    //           "Label": "X1",
+    //           "Addresses": {
+    //             "Configured": [
+    //               { "IPv4": "10.10.10.22" },
+    //               { "ProfinetDeviceName": "7600" }
+    //             ]
+    //           }
+    //         }
+    //       ] 
+    //     },
+    //     {
+    //       "Name": "Acquisition_Control",
+    //       "TypeIdentifier": {
+    //         "GsdId": "101",
+    //         "FileName": "GSDML-V2.34-COGNEX-INSIGHTCLASSB-20200529.XML"
+    //       }
+    //     },
+    //     {
+    //       "Name": "Acquisition_Status",
+    //       "TypeIdentifier": {
+    //         "GsdId": "201",
+    //         "FileName": "GSDML-V2.34-COGNEX-INSIGHTCLASSB-20200529.XML"
+    //       }
+    //     },
+    //     {
+    //       "Name": "Inspection_Control",
+    //       "TypeIdentifier": {
+    //         "GsdId": "102",
+    //         "FileName": "GSDML-V2.34-COGNEX-INSIGHTCLASSB-20200529.XML"
+    //       }
+    //     },
+    //     {
+    //       "Name": "Inspection_Status",
+    //       "TypeIdentifier": {
+    //         "GsdId": "203",
+    //         "FileName": "GSDML-V2.34-COGNEX-INSIGHTCLASSB-20200529.XML"
+    //       }
+    //     },
+    //     {
+    //       "Name": "Command_Control",
+    //       "TypeIdentifier": {
+    //         "GsdId": "107",
+    //         "FileName": "GSDML-V2.34-COGNEX-INSIGHTCLASSB-20200529.XML"
+    //       }
+    //     },
+    //     {
+    //       "Name": "SoftEvent_Control",
+    //       "TypeIdentifier": {
+    //         "GsdId": "106",
+    //         "FileName": "GSDML-V2.34-COGNEX-INSIGHTCLASSB-20200529.XML"
+    //       }
+    //     },
+    //     {
+    //       "Name": "User_Data-64_bytes",
+    //       "TypeIdentifier": {
+    //         "GsdId": "303",
+    //         "FileName": "GSDML-V2.34-COGNEX-INSIGHTCLASSB-20200529.XML"
+    //       }
+    //     },
+    //     {
+    //       "Name": "Result_Data-64_bytes",
+    //       "TypeIdentifier": {
+    //         "GsdId": "403",
+    //         "FileName": "GSDML-V2.34-COGNEX-INSIGHTCLASSB-20200529.XML"
+    //       }
+    //     }
+    //   ]
+    // },
+    // Commented out. Failed to create any of these modules of this device.
+    // {
+    //   "Name": "RobotBasicIO",
+    //   "Modules":[
+    //     {
+    //       "Name": "RobotBasicIO",
+    //       "TypeIdentifier": {
+    //         "GsdId": "DIM IO",
+    //         "FileName": "GSDML-V2.33-ABB-ROBOTICS-ROBOT-DEVICE-20180814.XML"
+    //       },
+    //       "Interfaces": [
+    //         {
+    //           "Name": "profinet",
+    //           "Label": "X1",
+    //           "Addresses": {
+    //             "Configured": [
+    //               { "IPv4": "10.10.10.1" },
+    //               { "ProfinetDeviceName": "RobotBasicIO" }
+    //             ]
+    //           }
+    //         }
+    //       ] 
+    //     },
+    //     {
+    //       "Name": "DI_64_bytes",
+    //       "TypeIdentifier": {
+    //         "GsdId": "1",
+    //         "FileName": "GSDML-V2.33-ABB-ROBOTICS-ROBOT-DEVICE-20180814.XML"
+    //       }
+    //     },
+    //     {
+    //       "Name": "DO_64_bytes",
+    //       "TypeIdentifier": {
+    //         "GsdId": "2",
+    //         "FileName": "GSDML-V2.33-ABB-ROBOTICS-ROBOT-DEVICE-20180814.XML"
+    //       }
+    //     }
+    //   ]
+    // },
+    {
+      "Name": "OmniCore",
+      "Modules":[
+        {
+          "Name": "OmniCore",
+          "TypeIdentifier": {
+            "GsdId": "DIM IO",
+            "FileName": "GSDML-V2.43-ABB-ROBOTICS-OMNICORE-20230327.XML"
+          },
+          "Interfaces": [
+            {
+              "Name": "profinet",
+              "Label": "X1",
+              "Addresses": {
+                "Configured": [
+                  { "IPv4": "10.10.10.2" },
+                  { "ProfinetDeviceName": "OmniCore" }
+                ]
+              }
+            }
+          ] 
+        },
+        {
+          "Name": "DI_64_bytes",
+          "TypeIdentifier": {
+            "GsdId": "1",
+            "FileName": "GSDML-V2.43-ABB-ROBOTICS-OMNICORE-20230327.XML"
+          }
+        },
+        {
+          "Name": "DO_64_bytes",
+          "TypeIdentifier": {
+            "GsdId": "2",
+            "FileName": "GSDML-V2.43-ABB-ROBOTICS-OMNICORE-20230327.XML"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "wp462-t1-rh-deso",
+      "Modules":[
+        {
+          "Name": "wp462-t1-rh-deso",
+          "TypeIdentifier": {
+            "GsdId": "DAP V2.0",
+            "FileName": "GSDML-V2.2-DESOUTTER-PRT-20100408.XML"
+          },
+          "Interfaces": [
+            {
+              "Name": "profinet",
+              "Label": "X1",
+              "Addresses": {
+                "Configured": [
+                  { "IPv4": "10.10.10.52" },
+                  { "ProfinetDeviceName": "wp462-t1-rh-deso" }
+                ]
+              }
+            }
+          ] 
+        },
+        {
+          "Name": "Input_1_byte_1",
+          "TypeIdentifier": {
+            "GsdId": "ID_MODULE_INPUT1B",
+            "FileName": "GSDML-V2.2-DESOUTTER-PRT-20100408.XML"
+          }
+        },
+        {
+          "Name": "Input_1_byte_2",
+          "TypeIdentifier": {
+            "GsdId": "ID_MODULE_INPUT1B",
+            "FileName": "GSDML-V2.2-DESOUTTER-PRT-20100408.XML"
+          }
+        },
+        {
+          "Name": "Input_2_word_1",
+          "TypeIdentifier": {
+            "GsdId": "ID_MODULE_INPUT2W",
+            "FileName": "GSDML-V2.2-DESOUTTER-PRT-20100408.XML"
+          }
+        },
+        {
+          "Name": "Input_1_word_1",
+          "TypeIdentifier": {
+            "GsdId": "ID_MODULE_INPUT1W",
+            "FileName": "GSDML-V2.2-DESOUTTER-PRT-20100408.XML"
+          }
+        },        
+        {
+          "Name": "Input_2_word_2",
+          "TypeIdentifier": {
+            "GsdId": "ID_MODULE_INPUT2W",
+            "FileName": "GSDML-V2.2-DESOUTTER-PRT-20100408.XML"
+          }
+        },
+        {
+          "Name": "Input_1_word_2",
+          "TypeIdentifier": {
+            "GsdId": "ID_MODULE_INPUT1W",
+            "FileName": "GSDML-V2.2-DESOUTTER-PRT-20100408.XML"
+          }
+        },        
+        {
+          "Name": "Output_1_byte_1",
+          "TypeIdentifier": {
+            "GsdId": "ID_MODULE_OUTPUT1B",
+            "FileName": "GSDML-V2.2-DESOUTTER-PRT-20100408.XML"
+          }
+        },        
+        {
+          "Name": "Output_1_byte_2",
+          "TypeIdentifier": {
+            "GsdId": "ID_MODULE_OUTPUT1B",
+            "FileName": "GSDML-V2.2-DESOUTTER-PRT-20100408.XML"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "KRC4",
+      "Modules":[
+        {
+          "Name": "KRC4",
+          "TypeIdentifier": {
+            "GsdId": "DIM 1",
+            "FileName": "GSDML-V2.33-KUKA-KRC4-PROFINET_5.0-20181102.XML"
+          },
+          "Interfaces": [
+            {
+              "Name": "profinet",
+              "Label": "X1",
+              "Addresses": {
+                "Configured": [
+                  { "IPv4": "10.10.10.53" },
+                  { "ProfinetDeviceName": "KRC4" }
+                ]
+              }
+            }
+          ] 
+        },
+        // Commented out. Failed to create this module.
+        // {
+        //   "Name": "512_digital_in_and_outputs_1",
+        //   "TypeIdentifier": {
+        //     "GsdId": "15",
+        //     "FileName": "GSDML-V2.33-KUKA-KRC4-PROFINET_5.0-20181102.XML"
+        //   }
+        // }
+      ]
+    },
+    {
+      "Name": "TZ535-PN",
+      "Modules":[
+        {
+          "Name": "TZ535-PN",
+          "TypeIdentifier": {
+            "GsdId": "DAP V2.0",
+            "FileName": "GSDML-V2.3-MITSUBISHI-TZ535_PN-20140619.XML"
+          },
+          "Interfaces": [
+            {
+              "Name": "profinet",
+              "Label": "X1",
+              "Addresses": {
+                "Configured": [
+                  { "IPv4": "10.10.10.54" },
+                  { "ProfinetDeviceName": "TZ535-PN" }
+                ]
+              }
+            }
+          ] 
+        },
+        {
+          "Name": "In_Out_64_byte_1",
+          "TypeIdentifier": {
+            "GsdId": "ID_MODULE_IN_OUT64B",
+            "FileName": "GSDML-V2.3-MITSUBISHI-TZ535_PN-20140619.XML"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "ST3_indradrive",
+      "Modules":[
+        {
+          "Name": "ST3_indradrive",
+          "TypeIdentifier": {
+            "GsdId": "DAP_IndraDrive",
+            "FileName": "GSDML-V2.1-BOSCH REXROTH AG-011F-INDRADRIVE_01V01-20110705.XML"
+          },
+          "Interfaces": [
+            {
+              "Name": "profinet",
+              "Label": "X1",
+              "Addresses": {
+                "Configured": [
+                  { "IPv4": "10.10.10.40" },
+                  { "ProfinetDeviceName": "ST3_indradrive" }
+                ]
+              }
+            }
+          ] 
+        },
+        // Commented out. Failed to create this module.
+        // {
+        //   "Name": "ParamCh_IDN_1",
+        //   "TypeIdentifier": {
+        //     "GsdId": "ID_PaCh_5Words",
+        //     "FileName": "GSDML-V2.1-BOSCH REXROTH AG-011F-INDRADRIVE_01V01-20110705.XML"
+        //   }
+        // },
+        {
+          "Name": "F-Modul_not_used_1",
+          "TypeIdentifier": {
+            "GsdId": "ID_FMod_NotUsed",
+            "FileName": "GSDML-V2.1-BOSCH REXROTH AG-011F-INDRADRIVE_01V01-20110705.XML"
+          }
+        },
+        {
+          "Name": "Input_9_Words_1",
+          "TypeIdentifier": {
+            "GsdId": "ID_InMod_9Words",
+            "FileName": "GSDML-V2.1-BOSCH REXROTH AG-011F-INDRADRIVE_01V01-20110705.XML"
+          }
+        },
+        {
+          "Name": "Output_13_Words_1",
+          "TypeIdentifier": {
+            "GsdId": "ID_OutMod_13Words",
+            "FileName": "GSDML-V2.1-BOSCH REXROTH AG-011F-INDRADRIVE_01V01-20110705.XML"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "SFK",
+      "Modules":[
+        {
+          "Name": "SFK",
+          "TypeIdentifier": {
+            "GsdId": "DAP_IndraDrive",
+            "FileName": "GSDML-V2.1-BOSCH REXROTH AG-011F-INDRADRIVE_02V02-20180110.XML"
+          },
+          "Interfaces": [
+            {
+              "Name": "profinet",
+              "Label": "X1",
+              "Addresses": {
+                "Configured": [
+                  { "IPv4": "10.10.10.60" },
+                  { "ProfinetDeviceName": "SFK" }
+                ]
+              }
+            }
+          ] 
+        },
+        // Commented out. Failed to create this module.
+        // {
+        //   "Name": "ParamCh_IDN_1",
+        //   "TypeIdentifier": {
+        //     "GsdId": "ID_PaCh_5Words",
+        //     "FileName": "GSDML-V2.1-BOSCH REXROTH AG-011F-INDRADRIVE_02V02-20180110.XML"
+        //   }
+        // },
+        {
+          "Name": "F-Modul_not_used_1",
+          "TypeIdentifier": {
+            "GsdId": "ID_FMod_NotUsed",
+            "FileName": "GSDML-V2.1-BOSCH REXROTH AG-011F-INDRADRIVE_02V02-20180110.XML"
+          }
+        },
+        {
+          "Name": "Input_24_Words",
+          "TypeIdentifier": {
+            "GsdId": "ID_InMod_24Words",
+            "FileName": "GSDML-V2.1-BOSCH REXROTH AG-011F-INDRADRIVE_02V02-20180110.XML"
+          }
+        },
+        {
+          "Name": "Output_21_Words",
+          "TypeIdentifier": {
+            "GsdId": "ID_OutMod_21Words",
+            "FileName": "GSDML-V2.1-BOSCH REXROTH AG-011F-INDRADRIVE_02V02-20180110.XML"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "URIODev1",
+      "Modules":[
+        {
+          "Name": "URIODev1",
+          "TypeIdentifier": {
+            "GsdId": "DAP 1",
+            "FileName": "GSDML-V2.31-UR-UR-20160505.XML"
+          },
+          "Interfaces": [
+            {
+              "Name": "profinet",
+              "Label": "X1",
+              "Addresses": {
+                "Configured": [
+                  { "IPv4": "10.10.10.61" },
+                  { "ProfinetDeviceName": "URIODev1" }
+                ]
+              }
+            }
+          ] 
+        },
+        {
+          "Name": "1_T2O_State_1",
+          "TypeIdentifier": {
+            "GsdId": "ID_Mod_11",
+            "FileName": "GSDML-V2.31-UR-UR-20160505.XML"
+          }
+        },
+        {
+          "Name": "2_T2O_IO_1",
+          "TypeIdentifier": {
+            "GsdId": "ID_Mod_12",
+            "FileName": "GSDML-V2.31-UR-UR-20160505.XML"
+          }
+        },
+        {
+          "Name": "3_T2O_Joints_1",
+          "TypeIdentifier": {
+            "GsdId": "ID_Mod_13",
+            "FileName": "GSDML-V2.31-UR-UR-20160505.XML"
+          }
+        },
+        {
+          "Name": "4_T2O_TCP_1",
+          "TypeIdentifier": {
+            "GsdId": "ID_Mod_14",
+            "FileName": "GSDML-V2.31-UR-UR-20160505.XML"
+          }
+        },
+        {
+          "Name": "5_T2O_General_Purpose_Bit_Registers_1",
+          "TypeIdentifier": {
+            "GsdId": "ID_Mod_15",
+            "FileName": "GSDML-V2.31-UR-UR-20160505.XML"
+          }
+        },
+        {
+          "Name": "6_T2O_General_Purpose_Int_Registers_1",
+          "TypeIdentifier": {
+            "GsdId": "ID_Mod_16",
+            "FileName": "GSDML-V2.31-UR-UR-20160505.XML"
+          }
+        },
+        {
+          "Name": "7_T2O_General_Purpose_Float_Registers_1",
+          "TypeIdentifier": {
+            "GsdId": "ID_Mod_17",
+            "FileName": "GSDML-V2.31-UR-UR-20160505.XML"
+          }
+        },
+        {
+          "Name": "8_O2T_Robot_IO_1",
+          "TypeIdentifier": {
+            "GsdId": "ID_Mod_18",
+            "FileName": "GSDML-V2.31-UR-UR-20160505.XML"
+          }
+        },
+        {
+          "Name": "9_O2T_General_Purpose_Registers_1_1",
+          "TypeIdentifier": {
+            "GsdId": "ID_Mod_19",
+            "FileName": "GSDML-V2.31-UR-UR-20160505.XML"
+          }
+        },
+        {
+          "Name": "10_O2T_General_Purpose_Registers_2_1",
+          "TypeIdentifier": {
+            "GsdId": "ID_Mod_20",
+            "FileName": "GSDML-V2.31-UR-UR-20160505.XML"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "URIODev1_1",
+      "Modules":[
+        {
+          "Name": "URIODev1_1",
+          "TypeIdentifier": {
+            "GsdId": "DAP 1",
+            "FileName": "GSDML-V2.42-UR-PROFISAFE-20220517.XML"
+          },
+          "Interfaces": [
+            {
+              "Name": "profinet",
+              "Label": "X1",
+              "Addresses": {
+                "Configured": [
+                  { "IPv4": "10.10.10.62" },
+                  { "ProfinetDeviceName": "URIODev1_1" }
+                ]
+              }
+            }
+          ] 
+        },
+        {
+          "Name": "1_T2O_State_1",
+          "TypeIdentifier": {
+            "GsdId": "ID_Mod_11",
+            "FileName": "GSDML-V2.42-UR-PROFISAFE-20220517.XML"
+          }
+        },
+        {
+          "Name": "2_T2O_IO_1",
+          "TypeIdentifier": {
+            "GsdId": "ID_Mod_12",
+            "FileName": "GSDML-V2.42-UR-PROFISAFE-20220517.XML"
+          }
+        },
+        {
+          "Name": "3_T2O_Joints_1",
+          "TypeIdentifier": {
+            "GsdId": "ID_Mod_13",
+            "FileName": "GSDML-V2.42-UR-PROFISAFE-20220517.XML"
+          }
+        },
+        {
+          "Name": "4_T2O_TCP_1",
+          "TypeIdentifier": {
+            "GsdId": "ID_Mod_14",
+            "FileName": "GSDML-V2.42-UR-PROFISAFE-20220517.XML"
+          }
+        },
+        {
+          "Name": "5_T2O_General_Purpose_Bit_Registers_1",
+          "TypeIdentifier": {
+            "GsdId": "ID_Mod_15",
+            "FileName": "GSDML-V2.42-UR-PROFISAFE-20220517.XML"
+          }
+        },
+        {
+          "Name": "6_T2O_General_Purpose_Int_Registers_1",
+          "TypeIdentifier": {
+            "GsdId": "ID_Mod_16",
+            "FileName": "GSDML-V2.42-UR-PROFISAFE-20220517.XML"
+          }
+        },
+        {
+          "Name": "7_T2O_General_Purpose_Float_Registers_1",
+          "TypeIdentifier": {
+            "GsdId": "ID_Mod_17",
+            "FileName": "GSDML-V2.42-UR-PROFISAFE-20220517.XML"
+          }
+        },
+        {
+          "Name": "8_O2T_Robot_IO_1",
+          "TypeIdentifier": {
+            "GsdId": "ID_Mod_18",
+            "FileName": "GSDML-V2.42-UR-PROFISAFE-20220517.XML"
+          }
+        },
+        {
+          "Name": "9_O2T_General_Purpose_Registers_1_1",
+          "TypeIdentifier": {
+            "GsdId": "ID_Mod_19",
+            "FileName": "GSDML-V2.42-UR-PROFISAFE-20220517.XML"
+          }
+        },
+        {
+          "Name": "10_O2T_General_Purpose_Registers_2_1",
+          "TypeIdentifier": {
+            "GsdId": "ID_Mod_20",
+            "FileName": "GSDML-V2.42-UR-PROFISAFE-20220517.XML"
+          }
+        }
+      ]
+    }
+  ]
+  ,
+  "IoSystems": [
+    {
+      "Name": "profinet_plc_line",
+      "ControllerInterfaces": [
+        { "Ref": "plc_line/plc_line/profinet" }
+      ],
+      "DeviceInterfaces": [
+        //{ "Ref":  "cmmtas/cmmtas/profinet" },                           // Commented out due to fatal error when downloading   gsdml file modified to be able to install the multiprotocol module
+        //{ "Ref":  "rf186c/rf186c/profinet" },                           // Commented out due to fatal error when downloading
+        { "Ref":  "et200sp/et200sp/profinet"},
+        { "Ref":  "et200sp_1/et200sp_1/profinet"},
+        { "Ref":  "festocpx/festocpx/profinet"},
+        { "Ref":  "aventics/aventics/profinet"},
+        { "Ref":  "BNIPNT507005Z040/BNIPNT507005Z040/profinet"},
+        { "Ref":  "reader-st1/reader-st1/profinet"},                      // Failed to create modules with "GsdId": "304" and "GsdId": "404"
+        { "Ref":  "reader-st2/reader-st2/profinet"},
+        // { "Ref":  "7600/7600/profinet"},                               // Unable to create any module of this device 
+        // { "Ref":  "RobotBasicIO/RobotBasicIO/profinet"},               // Unable to create any module of this device
+        { "Ref":  "OmniCore/OmniCore/profinet"},
+        { "Ref":  "wp462-t1-rh-deso/wp462-t1-rh-deso/profinet"},
+        { "Ref":  "KRC4/KRC4/profinet"},                                  // Failed to create modules with "GsdId": "15",
+        { "Ref":  "TZ535-PN/TZ535-PN/profinet"},
+        { "Ref":  "ST3_indradrive/ST3_indradrive/profinet"},              // Failed to create modules with "GsdId": "ID_PaCh_5Words",
+        { "Ref":  "SFK/SFK/profinet"},                                    // Failed to create modules with "GsdId": "ID_PaCh_5Words",
+        { "Ref":  "URIODev1/URIODev1/profinet"},
+        { "Ref":  "URIODev1_1/URIODev1_1/profinet"}
+      ]
+    }
+  ]
+}

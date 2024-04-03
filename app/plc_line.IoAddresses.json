@@ -1,0 +1,385 @@
+{
+  "Version": 1,
+  "IoAddresses": [
+    {
+      "Ref": "OmniCore/DI_64_bytes",
+      "IoConfiguration": {
+        "InputAddress": [
+          {
+            "StartAddress": "218.0",
+            "EndAddress": "281.7",
+            "Length": 512,
+            "Source": "AutoAssigned"
+          }
+        ]
+      }
+    },
+    {
+      "Ref": "OmniCore/DO_64_bytes",
+      "IoConfiguration": {
+        "OutputAddress": [
+          {
+            "StartAddress": "204.0",
+            "EndAddress": "267.7",
+            "Length": 512,
+            "Source": "AutoAssigned"
+          }
+        ]
+      }
+    },
+    {
+      "Ref": "SFK/Input_24_Words",
+      "IoConfiguration": {
+        "InputAddress": [
+          {
+            "StartAddress": "404.0",
+            "EndAddress": "451.7",
+            "Length": 384,
+            "Source": "AutoAssigned"
+          }
+        ]
+      }
+    },
+    {
+      "Ref": "SFK/Output_21_Words",
+      "IoConfiguration": {
+        "OutputAddress": [
+          {
+            "StartAddress": "378.0",
+            "EndAddress": "419.7",
+            "Length": 336,
+            "Source": "AutoAssigned"
+          }
+        ]
+      }
+    },
+    {
+      "Ref": "ST3_indradrive/Input_9_Words_1",
+      "IoConfiguration": {
+        "InputAddress": [
+          {
+            "StartAddress": "346.0",
+            "EndAddress": "363.7",
+            "Length": 144,
+            "Source": "AutoAssigned"
+          }
+        ]
+      }
+    },
+    {
+      "Ref": "ST3_indradrive/Output_13_Words_1",
+      "IoConfiguration": {
+        "OutputAddress": [
+          {
+            "StartAddress": "332.0",
+            "EndAddress": "357.7",
+            "Length": 208,
+            "Source": "AutoAssigned"
+          }
+        ]
+      }
+    },
+    {
+      "Ref": "TZ535-PN/In_Out_64_byte_1",
+      "IoConfiguration": {
+        "InputAddress": [
+          {
+            "StartAddress": "282.0",
+            "EndAddress": "345.7",
+            "Length": 512,
+            "Source": "AutoAssigned"
+          }
+        ],
+        "OutputAddress": [
+          {
+            "StartAddress": "268.0",
+            "EndAddress": "331.7",
+            "Length": 512,
+            "Source": "AutoAssigned"
+          }
+        ]
+      }
+    },
+    {
+      "Ref": "aventics/Valve-driver-2-valves_1",
+      "IoConfiguration": {
+        "OutputAddress": [
+          {
+            "StartAddress": "129.0",
+            "EndAddress": "129.7",
+            "Length": 8,
+            "Source": "AutoAssigned"
+          }
+        ]
+      }
+    },
+    {
+      "Ref": "aventics/Valve-driver-3-valves_1",
+      "IoConfiguration": {
+        "OutputAddress": [
+          {
+            "StartAddress": "132.0",
+            "EndAddress": "132.7",
+            "Length": 8,
+            "Source": "AutoAssigned"
+          }
+        ]
+      }
+    },
+    {
+      "Ref": "aventics/Valve-driver-4-valves_1",
+      "IoConfiguration": {
+        "OutputAddress": [
+          {
+            "StartAddress": "133.0",
+            "EndAddress": "133.7",
+            "Length": 8,
+            "Source": "AutoAssigned"
+          }
+        ]
+      }
+    },
+    {
+      "Ref": "aventics/Valve-driver-4-valves_2",
+      "IoConfiguration": {
+        "OutputAddress": [
+          {
+            "StartAddress": "131.0",
+            "EndAddress": "131.7",
+            "Length": 8,
+            "Source": "AutoAssigned"
+          }
+        ]
+      }
+    },
+    {
+      "Ref": "aventics/Valve-driver-4-valves_3",
+      "IoConfiguration": {
+        "OutputAddress": [
+          {
+            "StartAddress": "130.0",
+            "EndAddress": "130.7",
+            "Length": 8,
+            "Source": "AutoAssigned"
+          }
+        ]
+      }
+    },
+    {
+      "Ref": "et200sp/CM_4xIO-Link_V2_2_144I_128O_1",
+      "IoConfiguration": {
+        "InputAddress": [
+          {
+            "StartAddress": "2.0",
+            "EndAddress": "145.7",
+            "Length": 1152,
+            "Source": "AutoAssigned"
+          }
+        ],
+        "OutputAddress": [
+          {
+            "StartAddress": "1.0",
+            "EndAddress": "128.7",
+            "Length": 1024,
+            "Source": "AutoAssigned"
+          }
+        ]
+      }
+    },
+    {
+      "Ref": "et200sp_1/DI_ST_1",
+      "IoConfiguration": {
+        "InputAddress": [
+          {
+            "StartAddress": "1.0",
+            "EndAddress": "1.7",
+            "Length": 8,
+            "Source": "AutoAssigned"
+          }
+        ]
+      }
+    },
+    {
+      "Ref": "et200sp_1/DI_ST_2",
+      "IoConfiguration": {
+        "InputAddress": [
+          {
+            "StartAddress": "0.0",
+            "EndAddress": "0.7",
+            "Length": 8,
+            "Source": "AutoAssigned"
+          }
+        ]
+      }
+    },
+    {
+      "Ref": "et200sp_1/DQ_ST_1",
+      "IoConfiguration": {
+        "OutputAddress": [
+          {
+            "StartAddress": "0.0",
+            "EndAddress": "0.7",
+            "Length": 8,
+            "Source": "AutoAssigned"
+          }
+        ]
+      }
+    },
+    {
+      "Ref": "festocpx/MPA1S-VMPA1-FB-EMG-8_1",
+      "IoConfiguration": {
+        "OutputAddress": [
+          {
+            "StartAddress": "134.0",
+            "EndAddress": "134.7",
+            "Length": 8,
+            "Source": "AutoAssigned"
+          }
+        ]
+      }
+    },
+    {
+      "Ref": "festocpx/MPA1S-VMPA1-FB-EMS-8",
+      "IoConfiguration": {
+        "OutputAddress": [
+          {
+            "StartAddress": "135.0",
+            "EndAddress": "135.7",
+            "Length": 8,
+            "Source": "AutoAssigned"
+          }
+        ]
+      }
+    },
+    {
+      "Ref": "reader-st2/Result_Data-64_bytes",
+      "IoConfiguration": {
+        "InputAddress": [
+          {
+            "StartAddress": "146.0",
+            "EndAddress": "217.7",
+            "Length": 576,
+            "Source": "AutoAssigned"
+          }
+        ]
+      }
+    },
+    {
+      "Ref": "reader-st2/User_Data-64_bytes",
+      "IoConfiguration": {
+        "OutputAddress": [
+          {
+            "StartAddress": "136.0",
+            "EndAddress": "203.7",
+            "Length": 544,
+            "Source": "AutoAssigned"
+          }
+        ]
+      }
+    },
+    {
+      "Ref": "wp462-t1-rh-deso/Input_1_byte_1",
+      "IoConfiguration": {
+        "InputAddress": [
+          {
+            "StartAddress": "403.0",
+            "EndAddress": "403.7",
+            "Length": 8,
+            "Source": "AutoAssigned"
+          }
+        ]
+      }
+    },
+    {
+      "Ref": "wp462-t1-rh-deso/Input_1_byte_2",
+      "IoConfiguration": {
+        "InputAddress": [
+          {
+            "StartAddress": "402.0",
+            "EndAddress": "402.7",
+            "Length": 8,
+            "Source": "AutoAssigned"
+          }
+        ]
+      }
+    },
+    {
+      "Ref": "wp462-t1-rh-deso/Input_1_word_1",
+      "IoConfiguration": {
+        "InputAddress": [
+          {
+            "StartAddress": "396.0",
+            "EndAddress": "397.7",
+            "Length": 16,
+            "Source": "AutoAssigned"
+          }
+        ]
+      }
+    },
+    {
+      "Ref": "wp462-t1-rh-deso/Input_1_word_2",
+      "IoConfiguration": {
+        "InputAddress": [
+          {
+            "StartAddress": "390.0",
+            "EndAddress": "391.7",
+            "Length": 16,
+            "Source": "AutoAssigned"
+          }
+        ]
+      }
+    },
+    {
+      "Ref": "wp462-t1-rh-deso/Input_2_word_1",
+      "IoConfiguration": {
+        "InputAddress": [
+          {
+            "StartAddress": "398.0",
+            "EndAddress": "401.7",
+            "Length": 32,
+            "Source": "AutoAssigned"
+          }
+        ]
+      }
+    },
+    {
+      "Ref": "wp462-t1-rh-deso/Input_2_word_2",
+      "IoConfiguration": {
+        "InputAddress": [
+          {
+            "StartAddress": "392.0",
+            "EndAddress": "395.7",
+            "Length": 32,
+            "Source": "AutoAssigned"
+          }
+        ]
+      }
+    },
+    {
+      "Ref": "wp462-t1-rh-deso/Output_1_byte_1",
+      "IoConfiguration": {
+        "OutputAddress": [
+          {
+            "StartAddress": "377.0",
+            "EndAddress": "377.7",
+            "Length": 8,
+            "Source": "AutoAssigned"
+          }
+        ]
+      }
+    },
+    {
+      "Ref": "wp462-t1-rh-deso/Output_1_byte_2",
+      "IoConfiguration": {
+        "OutputAddress": [
+          {
+            "StartAddress": "376.0",
+            "EndAddress": "376.7",
+            "Length": 8,
+            "Source": "AutoAssigned"
+          }
+        ]
+      }
+    }
+  ]
+}

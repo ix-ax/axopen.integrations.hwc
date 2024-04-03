@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "isRoot": true,
+  "tools": {
+    "AXSharp.ixc": {
+      "version": "0.18.0-alpha.200",
+      "commands": [
+        "ixc"
+      ]
+    },
+    "docfx": {
+      "version": "2.70.4",
+      "commands": [
+        "docfx"
+      ]
+    },
+    "AXSharp.ixd": {
+      "version": "0.18.0-alpha.200",
+      "commands": [
+        "ixd"
+      ]
+    },
+    "AXSharp.ixr": {
+      "version": "0.18.0-alpha.200",
+      "commands": [
+        "ixr"
+      ]
+    },
+    "microsoft.visualstudio.slngen.tool": {
+      "version": "10.3.4",
+      "commands": [
+        "slngen"
+      ]
+    },
+    "docfxtocgenerator": {
+      "version": "1.10.0",
+      "commands": [
+        "DocFxTocGenerator"
+      ]
+    },
+    "gitversion.tool": {
+      "version": "5.12.0",
+      "commands": [
+        "dotnet-gitversion"
+      ]
+    }
+  }
+}

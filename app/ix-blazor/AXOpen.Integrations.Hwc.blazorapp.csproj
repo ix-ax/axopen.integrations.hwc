@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+	  <Packable>false</Packable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\axopen\src\base\src\AXOpen.Logging\AXOpen.Logging.Serilog.csproj" />
+    <ProjectReference Include="..\..\..\axopen\src\core\src\AXOpen.Core.Blazor\axopen_core_blazor.csproj" />
+    <ProjectReference Include="..\..\..\axopen\src\data\src\repositories\Json\AXOpen.Data.Json.csproj" />
+    <ProjectReference Include="..\..\..\axopen\src\security\src\AXOpen.Security.Blazor\AXOpen.Security.Blazor.csproj" />
+    <ProjectReference Include="..\..\src\AXOpen.Integrations.Hwc.blazor\AXOpen.Integrations.Hwc.blazor.csproj" />
+    <ProjectReference Include="..\ix\app_axopen_integrations_hwc.csproj" />
+  </ItemGroup>
+
+</Project>
