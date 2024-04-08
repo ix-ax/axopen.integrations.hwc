@@ -16,5 +16,12 @@ namespace Pocos
         public Boolean _moveHomeSignal { get; set; }
 
         public Boolean _moveWorkSignal { get; set; }
+
+        public Byte[] _data { get; set; } = new Byte[1];
+        public UInt16 _retvalAventics { get; set; }
+
+        public UInt16 _retvalFesto { get; set; }
+
+        public UInt16 _retvalET200 { get; set; }
     }
 }

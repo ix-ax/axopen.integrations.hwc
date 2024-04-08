@@ -19,6 +19,14 @@ public partial class SandboxContext : AXOpen.Core.AxoContext
 
     public OnlinerBool _moveWorkSignal { get; }
 
+    public OnlinerByte[] _data { get; }
+
+    public OnlinerWord _retvalAventics { get; }
+
+    public OnlinerWord _retvalFesto { get; }
+
+    public OnlinerWord _retvalET200 { get; }
+
     partial void PreConstruct(AXSharp.Connector.ITwinObject parent, string readableTail, string symbolTail);
     partial void PostConstruct(AXSharp.Connector.ITwinObject parent, string readableTail, string symbolTail);
     public SandboxContext(AXSharp.Connector.ITwinObject parent, string readableTail, string symbolTail) : base(parent, readableTail, symbolTail)
@@ -31,6 +39,11 @@ public partial class SandboxContext : AXOpen.Core.AxoContext
         _workSensor = @Connector.ConnectorAdapter.AdapterFactory.CreateBOOL(this, "_workSensor", "_workSensor");
         _moveHomeSignal = @Connector.ConnectorAdapter.AdapterFactory.CreateBOOL(this, "_moveHomeSignal", "_moveHomeSignal");
         _moveWorkSignal = @Connector.ConnectorAdapter.AdapterFactory.CreateBOOL(this, "_moveWorkSignal", "_moveWorkSignal");
+        _data = new OnlinerByte[1];
+        AXSharp.Connector.BuilderHelpers.Arrays.InstantiateArray(_data, this, "_data", "_data", (p, rt, st) => @Connector.ConnectorAdapter.AdapterFactory.CreateBYTE(p, rt, st), new[] { (0, 0) });
+        _retvalAventics = @Connector.ConnectorAdapter.AdapterFactory.CreateWORD(this, "_retvalAventics", "_retvalAventics");
+        _retvalFesto = @Connector.ConnectorAdapter.AdapterFactory.CreateWORD(this, "_retvalFesto", "_retvalFesto");
+        _retvalET200 = @Connector.ConnectorAdapter.AdapterFactory.CreateWORD(this, "_retvalET200", "_retvalET200");
         PostConstruct(parent, readableTail, symbolTail);
     }
 
@@ -54,6 +67,10 @@ public partial class SandboxContext : AXOpen.Core.AxoContext
         plain._workSensor = _workSensor.LastValue;
         plain._moveHomeSignal = _moveHomeSignal.LastValue;
         plain._moveWorkSignal = _moveWorkSignal.LastValue;
+        plain._data = _data.Select(p => p.LastValue).ToArray();
+        plain._retvalAventics = _retvalAventics.LastValue;
+        plain._retvalFesto = _retvalFesto.LastValue;
+        plain._retvalET200 = _retvalET200.LastValue;
         return plain;
     }
 
@@ -73,6 +90,10 @@ public partial class SandboxContext : AXOpen.Core.AxoContext
         plain._workSensor = _workSensor.LastValue;
         plain._moveHomeSignal = _moveHomeSignal.LastValue;
         plain._moveWorkSignal = _moveWorkSignal.LastValue;
+        plain._data = _data.Select(p => p.LastValue).ToArray();
+        plain._retvalAventics = _retvalAventics.LastValue;
+        plain._retvalFesto = _retvalFesto.LastValue;
+        plain._retvalET200 = _retvalET200.LastValue;
         return plain;
     }
 
@@ -91,6 +112,10 @@ public partial class SandboxContext : AXOpen.Core.AxoContext
         plain._workSensor = _workSensor.LastValue;
         plain._moveHomeSignal = _moveHomeSignal.LastValue;
         plain._moveWorkSignal = _moveWorkSignal.LastValue;
+        plain._data = _data.Select(p => p.LastValue).ToArray();
+        plain._retvalAventics = _retvalAventics.LastValue;
+        plain._retvalFesto = _retvalFesto.LastValue;
+        plain._retvalET200 = _retvalET200.LastValue;
         return plain;
     }
 
@@ -120,6 +145,19 @@ public partial class SandboxContext : AXOpen.Core.AxoContext
 #pragma warning disable CS0612
         _moveWorkSignal.LethargicWrite(plain._moveWorkSignal);
 #pragma warning restore CS0612
+        var __data_i_FE8484DAB3 = 0;
+#pragma warning disable CS0612
+        _data.Select(p => p.LethargicWrite(plain._data[__data_i_FE8484DAB3++])).ToArray();
+#pragma warning restore CS0612
+#pragma warning disable CS0612
+        _retvalAventics.LethargicWrite(plain._retvalAventics);
+#pragma warning restore CS0612
+#pragma warning disable CS0612
+        _retvalFesto.LethargicWrite(plain._retvalFesto);
+#pragma warning restore CS0612
+#pragma warning disable CS0612
+        _retvalET200.LethargicWrite(plain._retvalET200);
+#pragma warning restore CS0612
         return await this.WriteAsync<IgnoreOnPocoOperation>();
     }
 
@@ -146,6 +184,19 @@ public partial class SandboxContext : AXOpen.Core.AxoContext
 #pragma warning disable CS0612
         _moveWorkSignal.LethargicWrite(plain._moveWorkSignal);
 #pragma warning restore CS0612
+        var __data_i_FE8484DAB3 = 0;
+#pragma warning disable CS0612
+        _data.Select(p => p.LethargicWrite(plain._data[__data_i_FE8484DAB3++])).ToArray();
+#pragma warning restore CS0612
+#pragma warning disable CS0612
+        _retvalAventics.LethargicWrite(plain._retvalAventics);
+#pragma warning restore CS0612
+#pragma warning disable CS0612
+        _retvalFesto.LethargicWrite(plain._retvalFesto);
+#pragma warning restore CS0612
+#pragma warning disable CS0612
+        _retvalET200.LethargicWrite(plain._retvalET200);
+#pragma warning restore CS0612
     }
 
     public async override Task<T> ShadowToPlain<T>()
@@ -163,6 +214,10 @@ public partial class SandboxContext : AXOpen.Core.AxoContext
         plain._workSensor = _workSensor.Shadow;
         plain._moveHomeSignal = _moveHomeSignal.Shadow;
         plain._moveWorkSignal = _moveWorkSignal.Shadow;
+        plain._data = _data.Select(p => p.Shadow).ToArray();
+        plain._retvalAventics = _retvalAventics.Shadow;
+        plain._retvalFesto = _retvalFesto.Shadow;
+        plain._retvalET200 = _retvalET200.Shadow;
         return plain;
     }
 
@@ -175,6 +230,10 @@ public partial class SandboxContext : AXOpen.Core.AxoContext
         plain._workSensor = _workSensor.Shadow;
         plain._moveHomeSignal = _moveHomeSignal.Shadow;
         plain._moveWorkSignal = _moveWorkSignal.Shadow;
+        plain._data = _data.Select(p => p.Shadow).ToArray();
+        plain._retvalAventics = _retvalAventics.Shadow;
+        plain._retvalFesto = _retvalFesto.Shadow;
+        plain._retvalET200 = _retvalET200.Shadow;
         return plain;
     }
 
@@ -192,6 +251,11 @@ public partial class SandboxContext : AXOpen.Core.AxoContext
         _workSensor.Shadow = plain._workSensor;
         _moveHomeSignal.Shadow = plain._moveHomeSignal;
         _moveWorkSignal.Shadow = plain._moveWorkSignal;
+        var __data_i_FE8484DAB3 = 0;
+        _data.Select(p => p.Shadow = plain._data[__data_i_FE8484DAB3++]).ToArray();
+        _retvalAventics.Shadow = plain._retvalAventics;
+        _retvalFesto.Shadow = plain._retvalFesto;
+        _retvalET200.Shadow = plain._retvalET200;
         return this.RetrievePrimitives();
     }
 
@@ -225,6 +289,18 @@ public partial class SandboxContext : AXOpen.Core.AxoContext
             if (plain._moveHomeSignal != _moveHomeSignal.LastValue)
                 somethingChanged = true;
             if (plain._moveWorkSignal != _moveWorkSignal.LastValue)
+                somethingChanged = true;
+            for (int i760901_3001_mimi = 0; i760901_3001_mimi < latest._data.Length; i760901_3001_mimi++)
+            {
+                if (latest._data.ElementAt(i760901_3001_mimi) != plain._data[i760901_3001_mimi])
+                    somethingChanged = true;
+            }
+
+            if (plain._retvalAventics != _retvalAventics.LastValue)
+                somethingChanged = true;
+            if (plain._retvalFesto != _retvalFesto.LastValue)
+                somethingChanged = true;
+            if (plain._retvalET200 != _retvalET200.LastValue)
                 somethingChanged = true;
             plain = latest;
             return somethingChanged;

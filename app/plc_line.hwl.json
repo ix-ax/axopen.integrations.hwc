@@ -244,7 +244,7 @@
             "RecordDataList": [
               {
                 "Index": 128,
-                "RawValue": "0x00 02 0D 01 00 01 00 01 00 01 00 01 00 01 00 01 00 01" 
+                "RawValue": "0x00 02 00 01 00 01 00 01 00 01 00 01 00 01 00 01 00 01" 
               },
               {
                 "Index": 243,
@@ -263,7 +263,7 @@
             "RecordDataList": [
               {
                 "Index": 128,
-                "RawValue": "0x00 02 05 86 00 86 00 86 00 86 00 86 00 86 00 86 00 86" 
+                "RawValue": "0x00 02 00 86 00 86 00 86 00 86 00 86 00 86 00 86 00 86" 
               },
               {
                 "Index": 243,
@@ -282,7 +282,7 @@
             "RecordDataList": [
               {
                 "Index": 128,
-                "RawValue": "0x00 02 05 90 00 90 00 90 00 90 00 90 00 90 00 90 00 90" 
+                "RawValue": "0x00 02 00 86 00 86 00 86 00 86 00 86 00 86 00 86 00 86" 
               },
               {
                 "Index": 243,
@@ -1190,7 +1190,7 @@
       "DeviceInterfaces": [
         //{ "Ref":  "cmmtas/cmmtas/profinet" },                           // Commented out due to fatal error when downloading   gsdml file modified to be able to install the multiprotocol module
         //{ "Ref":  "rf186c/rf186c/profinet" },                           // Commented out due to fatal error when downloading
-        { "Ref":  "et200sp/et200sp/profinet"},
+        { "Ref":  "et200sp/et200sp/profinet"},                      
         { "Ref":  "et200sp_1/et200sp_1/profinet"},
         { "Ref":  "festocpx/festocpx/profinet"},
         { "Ref":  "aventics/aventics/profinet"},

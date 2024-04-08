@@ -47,6 +47,8 @@ dependencies:
   "@ix-ax/axopen.simatic1500": '0.0.0-dev.0'
   "@ax/simatic-1500-clocks": ^6.0.37
   "@ax/plc-mode": ^1.0.0
+  "@ax/simatic-1500-distributedio": ^6.0.3
+
 scripts:
   delta:
     - START=$(date +%s)

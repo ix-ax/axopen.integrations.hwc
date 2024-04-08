@@ -48,5 +48,4 @@ namespace AXOpen.Integrations.Hwc
         //= new(ConnectorAdapterBuilder.Build()
         //    .CreateWebApi(TargetIp, UserName, Pass, IgnoreSslErrors));
     }
-
 }

@@ -9,6 +9,7 @@ CONFIGURATION MyConfiguration
         documentation : DocumentationContext;
         {S7.extern=ReadWrite}
         _rtc : AXOpen.S71500.Rtc;
+        aventics_Valve_driver_2_valves_1 AT %QB129 : BYTE;
     END_VAR            
 END_CONFIGURATION
 
