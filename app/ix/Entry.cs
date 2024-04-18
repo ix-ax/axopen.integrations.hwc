@@ -31,7 +31,8 @@ namespace AXOpen.Integrations.Hwc
         }
 
         // Load your custom certificate (example from a file)
-        static X509Certificate2 customCertificate = new X509Certificate2("D:\\github\\ix-ax\\axopen\\src\\components.siemens.identification\\app\\certs\\plc_line\\plc_line.cer");
+        //static X509Certificate2 customCertificate = new X509Certificate2("D:\\github\\ix-ax\\axopen\\src\\components.siemens.identification\\app\\certs\\plc_line\\plc_line.cer");
+        static X509Certificate2 customCertificate = new X509Certificate2("D:\\github\\ix-ax\\axopen.integrations.hwc\\app\\certs\\plc_line\\plc_line.cer");
 
         // Implement the delegate
         private static bool CertificateValidation(HttpRequestMessage requestMessage, X509Certificate2 certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors)

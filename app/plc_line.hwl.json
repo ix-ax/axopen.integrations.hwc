@@ -586,10 +586,10 @@
     },
     // Commented out. Failed to create any of these modules of this device.
     // {
-    //   "Name": "7600",
+    //   "Name": "is7600",
     //   "Modules":[
     //     {
-    //       "Name": "7600",
+    //       "Name": "is7600",
     //       "TypeIdentifier": {
     //         "GsdId": "DAP20",
     //         "FileName": "GSDML-V2.34-COGNEX-INSIGHTCLASSB-20200529.XML"
@@ -601,7 +601,7 @@
     //           "Addresses": {
     //             "Configured": [
     //               { "IPv4": "10.10.10.22" },
-    //               { "ProfinetDeviceName": "7600" }
+    //               { "ProfinetDeviceName": "is7600" }
     //             ]
     //           }
     //         }
