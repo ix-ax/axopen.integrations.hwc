@@ -1188,25 +1188,25 @@
         { "Ref": "plc_line/plc_line/profinet" }
       ],
       "DeviceInterfaces": [
-        //{ "Ref":  "cmmtas/cmmtas/profinet" },                           // Commented out due to fatal error when downloading   gsdml file modified to be able to install the multiprotocol module
-        //{ "Ref":  "rf186c/rf186c/profinet" },                           // Commented out due to fatal error when downloading
-        { "Ref":  "et200sp/et200sp/profinet"},                      
-        { "Ref":  "et200sp_1/et200sp_1/profinet"},
-        { "Ref":  "festocpx/festocpx/profinet"},
-        { "Ref":  "aventics/aventics/profinet"},
-        { "Ref":  "BNIPNT507005Z040/BNIPNT507005Z040/profinet"},
-        { "Ref":  "reader-st1/reader-st1/profinet"},                      // Failed to create modules with "GsdId": "304" and "GsdId": "404"
-        { "Ref":  "reader-st2/reader-st2/profinet"},
-        // { "Ref":  "7600/7600/profinet"},                               // Unable to create any module of this device 
-        // { "Ref":  "RobotBasicIO/RobotBasicIO/profinet"},               // Unable to create any module of this device
-        { "Ref":  "OmniCore/OmniCore/profinet"},
-        { "Ref":  "wp462-t1-rh-deso/wp462-t1-rh-deso/profinet"},
-        { "Ref":  "KRC4/KRC4/profinet"},                                  // Failed to create modules with "GsdId": "15",
-        { "Ref":  "TZ535-PN/TZ535-PN/profinet"},
-        { "Ref":  "ST3_indradrive/ST3_indradrive/profinet"},              // Failed to create modules with "GsdId": "ID_PaCh_5Words",
-        { "Ref":  "SFK/SFK/profinet"},                                    // Failed to create modules with "GsdId": "ID_PaCh_5Words",
-        { "Ref":  "URIODev1/URIODev1/profinet"},
-        { "Ref":  "URIODev1_1/URIODev1_1/profinet"}
+        //{ "Ref":  "cmmtas/cmmtas/profinet" },                    //Error// Commented out due to fatal error when downloading   gsdml file modified to be able to install the multiprotocol module
+        //{ "Ref":  "rf186c/rf186c/profinet" },                    //Error// Commented out due to fatal error when downloading
+        { "Ref":  "et200sp/et200sp/profinet"},                            // Configured, compiled, downloaded without any issue, not tested physically with harware yet
+        { "Ref":  "et200sp_1/et200sp_1/profinet"},                        // Tested with harware physically - working as expected
+        { "Ref":  "festocpx/festocpx/profinet"},                          // Tested with harware physically - working as expected
+        { "Ref":  "aventics/aventics/profinet"},                          // Tested with harware physically - working as expected
+        { "Ref":  "BNIPNT507005Z040/BNIPNT507005Z040/profinet"},          // Configured, compiled, downloaded without any issue, not tested physically with harware yet
+        { "Ref":  "reader-st1/reader-st1/profinet"},               //Error// Failed to create modules with "GsdId": "304" and "GsdId": "404"
+        { "Ref":  "reader-st2/reader-st2/profinet"},                      // Configured, compiled, downloaded without any issue, not tested physically with harware yet
+        // { "Ref":  "is7600/is7600/profinet"},                    //Error// Unable to create any module of this device 
+        // { "Ref":  "RobotBasicIO/RobotBasicIO/profinet"},        //Error// Unable to create any module of this device
+        { "Ref":  "OmniCore/OmniCore/profinet"},                          // Configured, compiled, downloaded without any issue, not tested physically with harware yet
+        { "Ref":  "wp462-t1-rh-deso/wp462-t1-rh-deso/profinet"},          // Configured, compiled, downloaded without any issue, not tested physically with harware yet
+        { "Ref":  "KRC4/KRC4/profinet"},                           //Error// Failed to create modules with "GsdId": "15",
+        { "Ref":  "TZ535-PN/TZ535-PN/profinet"},                          // Configured, compiled, downloaded without any issue, not tested physically with harware yet
+        { "Ref":  "ST3_indradrive/ST3_indradrive/profinet"},       //Error// Failed to create modules with "GsdId": "ID_PaCh_5Words",
+        { "Ref":  "SFK/SFK/profinet"},                             //Error// Failed to create modules with "GsdId": "ID_PaCh_5Words",
+        { "Ref":  "URIODev1/URIODev1/profinet"},                          // Configured, compiled, downloaded without any issue, not tested physically with harware yet
+        { "Ref":  "URIODev1_1/URIODev1_1/profinet"}                       // Configured, compiled, downloaded without any issue, not tested physically with harware yet
       ]
     }
   ]
