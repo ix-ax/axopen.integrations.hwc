@@ -1,0 +1,933 @@
+{
+  "Version": 1,
+  "HardwareIdentifiers": [
+    {
+      "Name": "BNIPNT507005Z040",
+      "Value": 394
+    },
+    {
+      "Name": "BNIPNT507005Z040~BIS_M-4XX-045_1~BIS M-4XX-045",
+      "Value": 397
+    },
+    {
+      "Name": "BNIPNT507005Z040~BNIPNT507005Z040",
+      "Value": 396
+    },
+    {
+      "Name": "BNIPNT507005Z040~BNIPNT507005Z040~BNI PNT-507-005-Z040",
+      "Value": 401
+    },
+    {
+      "Name": "BNIPNT507005Z040~BNIPNT507005Z040~profinet",
+      "Value": 391
+    },
+    {
+      "Name": "BNIPNT507005Z040~BNIPNT507005Z040~profinet~port 1 - M12",
+      "Value": 392
+    },
+    {
+      "Name": "BNIPNT507005Z040~BNIPNT507005Z040~profinet~port 2 - M12",
+      "Value": 393
+    },
+    {
+      "Name": "BNIPNT507005Z040~Rack",
+      "Value": 395
+    },
+    {
+      "Name": "BNIPNT507005Z040~Standard I/O_2~Standard I/O",
+      "Value": 400
+    },
+    {
+      "Name": "BNIPNT507005Z040~Standard I/O_3~Standard I/O",
+      "Value": 399
+    },
+    {
+      "Name": "BNIPNT507005Z040~Standard I/O_4~Standard I/O",
+      "Value": 398
+    },
+    {
+      "Name": "KRC4",
+      "Value": 467
+    },
+    {
+      "Name": "KRC4~512_digital_in_and_outputs_1~512 digital in- and outputs",
+      "Value": 470
+    },
+    {
+      "Name": "KRC4~KRC4",
+      "Value": 469
+    },
+    {
+      "Name": "KRC4~KRC4~KRC4-ProfiNet_5.0",
+      "Value": 471
+    },
+    {
+      "Name": "KRC4~KRC4~profinet",
+      "Value": 465
+    },
+    {
+      "Name": "KRC4~KRC4~profinet~Port1",
+      "Value": 466
+    },
+    {
+      "Name": "KRC4~Rack",
+      "Value": 468
+    },
+    {
+      "Name": "OmniCore",
+      "Value": 337
+    },
+    {
+      "Name": "OmniCore~DI_64_bytes~DI 64 bytes",
+      "Value": 341
+    },
+    {
+      "Name": "OmniCore~DO_64_bytes~DO 64 bytes",
+      "Value": 340
+    },
+    {
+      "Name": "OmniCore~OmniCore",
+      "Value": 339
+    },
+    {
+      "Name": "OmniCore~OmniCore~OmniCore Standard PROFINET Device",
+      "Value": 342
+    },
+    {
+      "Name": "OmniCore~OmniCore~profinet",
+      "Value": 335
+    },
+    {
+      "Name": "OmniCore~OmniCore~profinet~Network Port 1",
+      "Value": 336
+    },
+    {
+      "Name": "OmniCore~Rack",
+      "Value": 338
+    },
+    {
+      "Name": "PROFINET IO-System",
+      "Value": 256
+    },
+    {
+      "Name": "RobotBasicIO",
+      "Value": 345
+    },
+    {
+      "Name": "RobotBasicIO~DI_64_bytes~DI 64 bytes",
+      "Value": 349
+    },
+    {
+      "Name": "RobotBasicIO~DO_64_bytes~DO 64 bytes",
+      "Value": 348
+    },
+    {
+      "Name": "RobotBasicIO~Rack",
+      "Value": 346
+    },
+    {
+      "Name": "RobotBasicIO~RobotBasicIO",
+      "Value": 347
+    },
+    {
+      "Name": "RobotBasicIO~RobotBasicIO~Robot Basic Device",
+      "Value": 350
+    },
+    {
+      "Name": "RobotBasicIO~RobotBasicIO~profinet",
+      "Value": 343
+    },
+    {
+      "Name": "RobotBasicIO~RobotBasicIO~profinet~Network Port",
+      "Value": 344
+    },
+    {
+      "Name": "SFK",
+      "Value": 305
+    },
+    {
+      "Name": "SFK~F-Modul_not_used_1~ID_FMod_NotUsed",
+      "Value": 311
+    },
+    {
+      "Name": "SFK~Input_24_Words~ID_InMod_24Words",
+      "Value": 309
+    },
+    {
+      "Name": "SFK~Output_21_Words~ID_OutMod_21Words",
+      "Value": 308
+    },
+    {
+      "Name": "SFK~ParamCh_IDN_1~ID_PaCh_5Words",
+      "Value": 310
+    },
+    {
+      "Name": "SFK~Rack",
+      "Value": 306
+    },
+    {
+      "Name": "SFK~SFK",
+      "Value": 307
+    },
+    {
+      "Name": "SFK~SFK~DAP 1",
+      "Value": 312
+    },
+    {
+      "Name": "SFK~SFK~profinet",
+      "Value": 302
+    },
+    {
+      "Name": "SFK~SFK~profinet~Port 1 - RJ45",
+      "Value": 303
+    },
+    {
+      "Name": "SFK~SFK~profinet~Port 2 - RJ45",
+      "Value": 304
+    },
+    {
+      "Name": "ST3_indradrive",
+      "Value": 293
+    },
+    {
+      "Name": "ST3_indradrive~F-Modul_not_used_1~ID_FMod_NotUsed",
+      "Value": 299
+    },
+    {
+      "Name": "ST3_indradrive~Input_9_Words_1~ID_InMod_9Words",
+      "Value": 297
+    },
+    {
+      "Name": "ST3_indradrive~Output_13_Words_1~ID_OutMod_13Words",
+      "Value": 296
+    },
+    {
+      "Name": "ST3_indradrive~ParamCh_IDN_1~ID_PaCh_5Words",
+      "Value": 298
+    },
+    {
+      "Name": "ST3_indradrive~Rack",
+      "Value": 294
+    },
+    {
+      "Name": "ST3_indradrive~ST3_indradrive",
+      "Value": 295
+    },
+    {
+      "Name": "ST3_indradrive~ST3_indradrive~DAP 1",
+      "Value": 300
+    },
+    {
+      "Name": "ST3_indradrive~ST3_indradrive~profinet",
+      "Value": 290
+    },
+    {
+      "Name": "ST3_indradrive~ST3_indradrive~profinet~Port 1 - RJ45",
+      "Value": 291
+    },
+    {
+      "Name": "ST3_indradrive~ST3_indradrive~profinet~Port 2 - RJ45",
+      "Value": 292
+    },
+    {
+      "Name": "TZ535-PN",
+      "Value": 316
+    },
+    {
+      "Name": "TZ535-PN~In_Out_64_byte_1~In/Out  64 byte",
+      "Value": 319
+    },
+    {
+      "Name": "TZ535-PN~Rack",
+      "Value": 317
+    },
+    {
+      "Name": "TZ535-PN~TZ535-PN",
+      "Value": 318
+    },
+    {
+      "Name": "TZ535-PN~TZ535-PN~2D-TZ535-PN(PROFINET IO)",
+      "Value": 320
+    },
+    {
+      "Name": "TZ535-PN~TZ535-PN~profinet",
+      "Value": 313
+    },
+    {
+      "Name": "TZ535-PN~TZ535-PN~profinet~Port 1",
+      "Value": 314
+    },
+    {
+      "Name": "TZ535-PN~TZ535-PN~profinet~Port 2",
+      "Value": 315
+    },
+    {
+      "Name": "URIODev1",
+      "Value": 276
+    },
+    {
+      "Name": "URIODev1_1",
+      "Value": 259
+    },
+    {
+      "Name": "URIODev1_1~10_O2T_General_Purpose_Registers_2_1~10_O2T General Purpose Registers 2",
+      "Value": 262
+    },
+    {
+      "Name": "URIODev1_1~1_T2O_State_1~1_T2O State",
+      "Value": 271
+    },
+    {
+      "Name": "URIODev1_1~2_T2O_IO_1~2_T2O IO",
+      "Value": 270
+    },
+    {
+      "Name": "URIODev1_1~3_T2O_Joints_1~3_T2O Joints",
+      "Value": 269
+    },
+    {
+      "Name": "URIODev1_1~4_T2O_TCP_1~4_T2O TCP",
+      "Value": 268
+    },
+    {
+      "Name": "URIODev1_1~5_T2O_General_Purpose_Bit_Registers_1~5_T2O General Purpose Bit Registers",
+      "Value": 267
+    },
+    {
+      "Name": "URIODev1_1~6_T2O_General_Purpose_Int_Registers_1~6_T2O General Purpose Int Registers",
+      "Value": 266
+    },
+    {
+      "Name": "URIODev1_1~7_T2O_General_Purpose_Float_Registers_1~7_T2O General Purpose Float Registers",
+      "Value": 265
+    },
+    {
+      "Name": "URIODev1_1~8_O2T_Robot_IO_1~8_O2T Robot IO",
+      "Value": 264
+    },
+    {
+      "Name": "URIODev1_1~9_O2T_General_Purpose_Registers_1_1~9_O2T General Purpose Registers 1",
+      "Value": 263
+    },
+    {
+      "Name": "URIODev1_1~PROFIsafe_1~Module Access Point",
+      "Value": 272
+    },
+    {
+      "Name": "URIODev1_1~Rack",
+      "Value": 260
+    },
+    {
+      "Name": "URIODev1_1~URIODev1_1",
+      "Value": 261
+    },
+    {
+      "Name": "URIODev1_1~URIODev1_1~V1.0",
+      "Value": 273
+    },
+    {
+      "Name": "URIODev1_1~URIODev1_1~profinet",
+      "Value": 257
+    },
+    {
+      "Name": "URIODev1_1~URIODev1_1~profinet~RJ45 10/100 MBit/s",
+      "Value": 258
+    },
+    {
+      "Name": "URIODev1~10_O2T_General_Purpose_Registers_2_1~10_O2T General Purpose Registers 2",
+      "Value": 279
+    },
+    {
+      "Name": "URIODev1~1_T2O_State_1~1_T2O State",
+      "Value": 288
+    },
+    {
+      "Name": "URIODev1~2_T2O_IO_1~2_T2O IO",
+      "Value": 287
+    },
+    {
+      "Name": "URIODev1~3_T2O_Joints_1~3_T2O Joints",
+      "Value": 286
+    },
+    {
+      "Name": "URIODev1~4_T2O_TCP_1~4_T2O TCP",
+      "Value": 285
+    },
+    {
+      "Name": "URIODev1~5_T2O_General_Purpose_Bit_Registers_1~5_T2O General Purpose Bit Registers",
+      "Value": 284
+    },
+    {
+      "Name": "URIODev1~6_T2O_General_Purpose_Int_Registers_1~6_T2O General Purpose Int Registers",
+      "Value": 283
+    },
+    {
+      "Name": "URIODev1~7_T2O_General_Purpose_Float_Registers_1~7_T2O General Purpose Float Registers",
+      "Value": 282
+    },
+    {
+      "Name": "URIODev1~8_O2T_Robot_IO_1~8_O2T Robot IO",
+      "Value": 281
+    },
+    {
+      "Name": "URIODev1~9_O2T_General_Purpose_Registers_1_1~9_O2T General Purpose Registers 1",
+      "Value": 280
+    },
+    {
+      "Name": "URIODev1~Rack",
+      "Value": 277
+    },
+    {
+      "Name": "URIODev1~URIODev1",
+      "Value": 278
+    },
+    {
+      "Name": "URIODev1~URIODev1~V1.0",
+      "Value": 289
+    },
+    {
+      "Name": "URIODev1~URIODev1~profinet",
+      "Value": 274
+    },
+    {
+      "Name": "URIODev1~URIODev1~profinet~RJ45 10/100 MBit/s",
+      "Value": 275
+    },
+    {
+      "Name": "aventics",
+      "Value": 405
+    },
+    {
+      "Name": "aventics~Rack",
+      "Value": 406
+    },
+    {
+      "Name": "aventics~Valve-driver-2-valves_1~Valve driver 2 valves (2)",
+      "Value": 408
+    },
+    {
+      "Name": "aventics~Valve-driver-3-valves_1~Valve driver 3 valves (3)",
+      "Value": 411
+    },
+    {
+      "Name": "aventics~Valve-driver-4-valves_1~Valve driver 4 valves (4)",
+      "Value": 412
+    },
+    {
+      "Name": "aventics~Valve-driver-4-valves_2~Valve driver 4 valves (4)",
+      "Value": 410
+    },
+    {
+      "Name": "aventics~Valve-driver-4-valves_3~Valve driver 4 valves (4)",
+      "Value": 409
+    },
+    {
+      "Name": "aventics~aventics",
+      "Value": 407
+    },
+    {
+      "Name": "aventics~aventics~AES Modul",
+      "Value": 413
+    },
+    {
+      "Name": "aventics~aventics~profinet",
+      "Value": 402
+    },
+    {
+      "Name": "aventics~aventics~profinet~Port 1",
+      "Value": 403
+    },
+    {
+      "Name": "aventics~aventics~profinet~Port 2",
+      "Value": 404
+    },
+    {
+      "Name": "cmmtas",
+      "Value": 456
+    },
+    {
+      "Name": "cmmtas~Rack",
+      "Value": 457
+    },
+    {
+      "Name": "cmmtas~SiemensTelegram111-PZD-12-12",
+      "Value": 462
+    },
+    {
+      "Name": "cmmtas~SiemensTelegram750-PZD-4-1",
+      "Value": 463
+    },
+    {
+      "Name": "cmmtas~cmmtas",
+      "Value": 458
+    },
+    {
+      "Name": "cmmtas~cmmtas~CMMT-AS-...-MP",
+      "Value": 464
+    },
+    {
+      "Name": "cmmtas~cmmtas~DoServo",
+      "Value": 459
+    },
+    {
+      "Name": "cmmtas~cmmtas~DoServo~Module Access Point",
+      "Value": 461
+    },
+    {
+      "Name": "cmmtas~cmmtas~empty submodule",
+      "Value": 460
+    },
+    {
+      "Name": "cmmtas~cmmtas~profinet",
+      "Value": 453
+    },
+    {
+      "Name": "cmmtas~cmmtas~profinet~Port 1",
+      "Value": 454
+    },
+    {
+      "Name": "cmmtas~cmmtas~profinet~Port 2",
+      "Value": 455
+    },
+    {
+      "Name": "et200sp",
+      "Value": 438
+    },
+    {
+      "Name": "et200sp_1",
+      "Value": 427
+    },
+    {
+      "Name": "et200sp_1~DI_ST_1~DI 8x24VDC ST V1.1",
+      "Value": 432
+    },
+    {
+      "Name": "et200sp_1~DI_ST_2~DI 8x24VDC ST V1.1",
+      "Value": 431
+    },
+    {
+      "Name": "et200sp_1~DQ_ST_1~DQ 8x24VDC/0.5A ST V1.1",
+      "Value": 433
+    },
+    {
+      "Name": "et200sp_1~Rack",
+      "Value": 428
+    },
+    {
+      "Name": "et200sp_1~Server_module_V1_1~Server module V1.1 (0 bytes)",
+      "Value": 430
+    },
+    {
+      "Name": "et200sp_1~et200sp_1",
+      "Value": 429
+    },
+    {
+      "Name": "et200sp_1~et200sp_1~IM 155-6 PN ST V3.3",
+      "Value": 434
+    },
+    {
+      "Name": "et200sp_1~et200sp_1~Port 1 (2xRJ45)",
+      "Value": 425
+    },
+    {
+      "Name": "et200sp_1~et200sp_1~Port 2 (2xRJ45)",
+      "Value": 426
+    },
+    {
+      "Name": "et200sp_1~et200sp_1~profinet",
+      "Value": 424
+    },
+    {
+      "Name": "et200sp~CM_4xIO-Link_V2_2_144I_128O_1~CM 4xIO-Link V2.2 144I/128O",
+      "Value": 442
+    },
+    {
+      "Name": "et200sp~Rack",
+      "Value": 439
+    },
+    {
+      "Name": "et200sp~Server_module_V1_1~Server module V1.1 (0 bytes)",
+      "Value": 441
+    },
+    {
+      "Name": "et200sp~et200sp",
+      "Value": 440
+    },
+    {
+      "Name": "et200sp~et200sp~IM 155-6 PN ST V4.2",
+      "Value": 443
+    },
+    {
+      "Name": "et200sp~et200sp~Port 1 (2xRJ45)",
+      "Value": 436
+    },
+    {
+      "Name": "et200sp~et200sp~Port 2 (2xRJ45)",
+      "Value": 437
+    },
+    {
+      "Name": "et200sp~et200sp~profinet",
+      "Value": 435
+    },
+    {
+      "Name": "festocpx",
+      "Value": 417
+    },
+    {
+      "Name": "festocpx~FB43_PNIO_Module_1~FB43 PNIO Module",
+      "Value": 422
+    },
+    {
+      "Name": "festocpx~MPA1S-VMPA1-FB-EMG-8_1~MPA1G VMPA1-FB-EMG-8 [8DO]",
+      "Value": 420
+    },
+    {
+      "Name": "festocpx~MPA1S-VMPA1-FB-EMS-8~MPA1S VMPA1-FB-EMS-8 [8DO]",
+      "Value": 421
+    },
+    {
+      "Name": "festocpx~Rack",
+      "Value": 418
+    },
+    {
+      "Name": "festocpx~festocpx",
+      "Value": 419
+    },
+    {
+      "Name": "festocpx~festocpx~CPX Rev 50",
+      "Value": 423
+    },
+    {
+      "Name": "festocpx~festocpx~profinet",
+      "Value": 414
+    },
+    {
+      "Name": "festocpx~festocpx~profinet~Port 1",
+      "Value": 415
+    },
+    {
+      "Name": "festocpx~festocpx~profinet~Port 2",
+      "Value": 416
+    },
+    {
+      "Name": "is7600",
+      "Value": 353
+    },
+    {
+      "Name": "is7600~Acquisition_Control~Acquisition Control",
+      "Value": 363
+    },
+    {
+      "Name": "is7600~Acquisition_Status~Acquisition Status",
+      "Value": 359
+    },
+    {
+      "Name": "is7600~Command_Control~Command Control",
+      "Value": 360
+    },
+    {
+      "Name": "is7600~Inspection_Control~Inspection Control",
+      "Value": 362
+    },
+    {
+      "Name": "is7600~Inspection_Status~Inspection Status",
+      "Value": 358
+    },
+    {
+      "Name": "is7600~Rack",
+      "Value": 354
+    },
+    {
+      "Name": "is7600~Result_Data-64_bytes~Results - 64 bytes",
+      "Value": 356
+    },
+    {
+      "Name": "is7600~SoftEvent_Control~SoftEvent Control",
+      "Value": 361
+    },
+    {
+      "Name": "is7600~User_Data-64_bytes~User Data - 64 bytes",
+      "Value": 357
+    },
+    {
+      "Name": "is7600~is7600",
+      "Value": 355
+    },
+    {
+      "Name": "is7600~is7600~In-Sight IS79XX-IS75XX CC-B",
+      "Value": 364
+    },
+    {
+      "Name": "is7600~is7600~profinet",
+      "Value": 351
+    },
+    {
+      "Name": "is7600~is7600~profinet~Port 1",
+      "Value": 352
+    },
+    {
+      "Name": "plc_line",
+      "Value": 32
+    },
+    {
+      "Name": "plc_line~Rail_0",
+      "Value": 301
+    },
+    {
+      "Name": "plc_line~plc_line",
+      "Value": 48
+    },
+    {
+      "Name": "plc_line~plc_line~ plc_line",
+      "Value": 49
+    },
+    {
+      "Name": "plc_line~plc_line~CPU display_1",
+      "Value": 54
+    },
+    {
+      "Name": "plc_line~plc_line~CPU exec unit_1",
+      "Value": 52
+    },
+    {
+      "Name": "plc_line~plc_line~Card reader/writer_1",
+      "Value": 51
+    },
+    {
+      "Name": "plc_line~plc_line~DP interface_1",
+      "Value": 60
+    },
+    {
+      "Name": "plc_line~plc_line~LicenseManager_1",
+      "Value": 42
+    },
+    {
+      "Name": "plc_line~plc_line~OPC UA_1",
+      "Value": 117
+    },
+    {
+      "Name": "plc_line~plc_line~PROFINET interface_2",
+      "Value": 72
+    },
+    {
+      "Name": "plc_line~plc_line~PROFINET interface_2~Port_1",
+      "Value": 73
+    },
+    {
+      "Name": "plc_line~plc_line~Virtual communication interface",
+      "Value": 135
+    },
+    {
+      "Name": "plc_line~plc_line~plc_line",
+      "Value": 50
+    },
+    {
+      "Name": "plc_line~plc_line~profinet",
+      "Value": 64
+    },
+    {
+      "Name": "plc_line~plc_line~profinet~Port1",
+      "Value": 65
+    },
+    {
+      "Name": "plc_line~plc_line~profinet~Port2",
+      "Value": 66
+    },
+    {
+      "Name": "reader-st1",
+      "Value": 380
+    },
+    {
+      "Name": "reader-st1~Acquisition_Control~Acquisition Control",
+      "Value": 389
+    },
+    {
+      "Name": "reader-st1~Acquisition_Status~Acquisition Status",
+      "Value": 388
+    },
+    {
+      "Name": "reader-st1~Rack",
+      "Value": 381
+    },
+    {
+      "Name": "reader-st1~Result Data - 64 bytes_1~Result Data - 64 bytes",
+      "Value": 383
+    },
+    {
+      "Name": "reader-st1~Results_Control~Results Control",
+      "Value": 387
+    },
+    {
+      "Name": "reader-st1~Results_Status~Results Status",
+      "Value": 386
+    },
+    {
+      "Name": "reader-st1~Soft_Event_Control~Soft Event Control",
+      "Value": 385
+    },
+    {
+      "Name": "reader-st1~User Data - 64 bytes_1~User Data - 64 bytes",
+      "Value": 384
+    },
+    {
+      "Name": "reader-st1~reader-st1",
+      "Value": 382
+    },
+    {
+      "Name": "reader-st1~reader-st1~DataMan 280 CC-B",
+      "Value": 390
+    },
+    {
+      "Name": "reader-st1~reader-st1~profinet",
+      "Value": 378
+    },
+    {
+      "Name": "reader-st1~reader-st1~profinet~Port 1",
+      "Value": 379
+    },
+    {
+      "Name": "reader-st2",
+      "Value": 367
+    },
+    {
+      "Name": "reader-st2~Acquisition_Control~Acquisition Control",
+      "Value": 376
+    },
+    {
+      "Name": "reader-st2~Acquisition_Status~Acquisition Status",
+      "Value": 375
+    },
+    {
+      "Name": "reader-st2~Rack",
+      "Value": 368
+    },
+    {
+      "Name": "reader-st2~Result_Data-64_bytes~Result Data - 64 bytes",
+      "Value": 370
+    },
+    {
+      "Name": "reader-st2~Results_Control~Results Control",
+      "Value": 374
+    },
+    {
+      "Name": "reader-st2~Results_Status~Results Status",
+      "Value": 373
+    },
+    {
+      "Name": "reader-st2~Soft_Event_Control~Soft Event Control",
+      "Value": 372
+    },
+    {
+      "Name": "reader-st2~User_Data-64_bytes~User Data - 64 bytes",
+      "Value": 371
+    },
+    {
+      "Name": "reader-st2~reader-st2",
+      "Value": 369
+    },
+    {
+      "Name": "reader-st2~reader-st2~DataMan 300",
+      "Value": 377
+    },
+    {
+      "Name": "reader-st2~reader-st2~profinet",
+      "Value": 365
+    },
+    {
+      "Name": "reader-st2~reader-st2~profinet~Port 1",
+      "Value": 366
+    },
+    {
+      "Name": "rf186c",
+      "Value": 447
+    },
+    {
+      "Name": "rf186c~Rack",
+      "Value": 448
+    },
+    {
+      "Name": "rf186c~Reader_1~ Reader ",
+      "Value": 450
+    },
+    {
+      "Name": "rf186c~rf186c",
+      "Value": 449
+    },
+    {
+      "Name": "rf186c~rf186c~CM_1~ Communication ",
+      "Value": 451
+    },
+    {
+      "Name": "rf186c~rf186c~RF186C   V2.x",
+      "Value": 452
+    },
+    {
+      "Name": "rf186c~rf186c~profinet",
+      "Value": 444
+    },
+    {
+      "Name": "rf186c~rf186c~profinet~Port 1",
+      "Value": 445
+    },
+    {
+      "Name": "rf186c~rf186c~profinet~Port 2",
+      "Value": 446
+    },
+    {
+      "Name": "wp462-t1-rh-deso",
+      "Value": 323
+    },
+    {
+      "Name": "wp462-t1-rh-deso~Input_1_byte_1~Input 1 byte",
+      "Value": 333
+    },
+    {
+      "Name": "wp462-t1-rh-deso~Input_1_byte_2~Input 1 byte",
+      "Value": 332
+    },
+    {
+      "Name": "wp462-t1-rh-deso~Input_1_word_1~Input 1 word",
+      "Value": 330
+    },
+    {
+      "Name": "wp462-t1-rh-deso~Input_1_word_2~Input 1 word",
+      "Value": 328
+    },
+    {
+      "Name": "wp462-t1-rh-deso~Input_2_word_1~Input 2 word",
+      "Value": 331
+    },
+    {
+      "Name": "wp462-t1-rh-deso~Input_2_word_2~Input 2 word",
+      "Value": 329
+    },
+    {
+      "Name": "wp462-t1-rh-deso~Output_1_byte_1~Output 1 byte",
+      "Value": 327
+    },
+    {
+      "Name": "wp462-t1-rh-deso~Output_1_byte_2~Output 1 byte",
+      "Value": 326
+    },
+    {
+      "Name": "wp462-t1-rh-deso~Rack",
+      "Value": 324
+    },
+    {
+      "Name": "wp462-t1-rh-deso~wp462-t1-rh-deso",
+      "Value": 325
+    },
+    {
+      "Name": "wp462-t1-rh-deso~wp462-t1-rh-deso~RT",
+      "Value": 334
+    },
+    {
+      "Name": "wp462-t1-rh-deso~wp462-t1-rh-deso~profinet",
+      "Value": 321
+    },
+    {
+      "Name": "wp462-t1-rh-deso~wp462-t1-rh-deso~profinet~Port 1",
+      "Value": 322
+    }
+  ]
+}
